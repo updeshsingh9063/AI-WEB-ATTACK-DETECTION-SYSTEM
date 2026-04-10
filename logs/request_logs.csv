@@ -1,0 +1,6 @@
+request,result,type
+GET /home,✅ Safe,Normal
+admin' OR 1=1--,🚫 Attack Detected,SQL Injection
+<script>alert(1)</script>,🚫 Attack Detected,XSS
+GET /search?q=<script>alert(1)</script>,🚫 Attack Detected,XSS
+www.google.com,⚠️ Suspicious,ML Detection
